@@ -1,0 +1,444 @@
+[{
+  "_id": {
+    "$oid": "6727c484d67bbaf25a15399d"
+  },
+  "usuario": {
+    "id": "67266f954994725ec4623a63",
+    "nombre": "Ana",
+    "apellido": "Martínez",
+    "email": "ana.martinez@email.com"
+  },
+  "items": [
+    {
+      "nombre": "Mesa de comedor",
+      "cantidad": 1,
+      "precio": 139996.5,
+      "total": 139996.5,
+      "_id": {
+        "$oid": "6727c484d67bbaf25a15399e"
+      }
+    },
+    {
+      "nombre": "Sofá de 3 plazas",
+      "cantidad": 2,
+      "precio": 209996.5,
+      "total": 419993,
+      "_id": {
+        "$oid": "6727c484d67bbaf25a15399f"
+      }
+    }
+  ],
+  "total": 559989.5,
+  "estado": "finalizado",
+  "fecha": {
+    "$date": "2024-11-03T18:44:20.568Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6727c59a3092335ad5ffcaf6"
+  },
+  "usuario": {
+    "id": "67266f954994725ec4623a63",
+    "nombre": "Ana",
+    "apellido": "Martínez",
+    "email": "ana.martinez@email.com"
+  },
+  "items": [
+    {
+      "nombre": "Mesa de comedor",
+      "cantidad": 2,
+      "precio": 139996.5,
+      "total": 279993,
+      "_id": {
+        "$oid": "6727c59a3092335ad5ffcaf7"
+      }
+    },
+    {
+      "nombre": "Set de toallas",
+      "cantidad": 5,
+      "precio": 24496.5,
+      "total": 122482.5,
+      "_id": {
+        "$oid": "6727c59a3092335ad5ffcaf8"
+      }
+    },
+    {
+      "nombre": "Juego de sábanas",
+      "cantidad": 6,
+      "precio": 31496.5,
+      "total": 188979,
+      "_id": {
+        "$oid": "6727c59a3092335ad5ffcaf9"
+      }
+    },
+    {
+      "nombre": "Aspiradora robot",
+      "cantidad": 4,
+      "precio": 104996.5,
+      "total": 419986,
+      "_id": {
+        "$oid": "6727c59a3092335ad5ffcafa"
+      }
+    }
+  ],
+  "total": 1011440.5,
+  "estado": "finalizado",
+  "fecha": {
+    "$date": "2024-11-03T18:48:58.089Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6727d2b179b425d54878bd76"
+  },
+  "usuario": {
+    "id": "67266f954994725ec4623a6a",
+    "nombre": "Javier",
+    "apellido": "Ruiz",
+    "email": "javier.ruiz@email.com"
+  },
+  "items": [
+    {
+      "nombre": "Sofá de 3 plazas",
+      "cantidad": 4,
+      "precio": 209996.5,
+      "total": 839986,
+      "_id": {
+        "$oid": "6727d2b179b425d54878bd77"
+      }
+    },
+    {
+      "nombre": "Juego de sábanas",
+      "cantidad": 2,
+      "precio": 31496.5,
+      "total": 62993,
+      "_id": {
+        "$oid": "6727d2b179b425d54878bd78"
+      }
+    },
+    {
+      "nombre": "Lámpara de pie",
+      "cantidad": 4,
+      "precio": 45496.5,
+      "total": 181986,
+      "_id": {
+        "$oid": "6727d2b179b425d54878bd79"
+      }
+    },
+    {
+      "nombre": "Aspiradora robot",
+      "cantidad": 2,
+      "precio": 104996.5,
+      "total": 209993,
+      "_id": {
+        "$oid": "6727d2b179b425d54878bd7a"
+      }
+    }
+  ],
+  "total": 1294958,
+  "estado": "finalizado",
+  "fecha": {
+    "$date": "2024-11-03T19:44:49.778Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6727d2fd79b425d54878bd7d"
+  },
+  "usuario": {
+    "id": "67266f954994725ec4623a6a",
+    "nombre": "Javier",
+    "apellido": "Ruiz",
+    "email": "javier.ruiz@email.com"
+  },
+  "items": [
+    {
+      "nombre": "Lámpara de pie",
+      "cantidad": 4,
+      "precio": 45496.5,
+      "total": 181986,
+      "_id": {
+        "$oid": "6727d2fd79b425d54878bd7e"
+      }
+    },
+    {
+      "nombre": "Juego de sábanas",
+      "cantidad": 2,
+      "precio": 31496.5,
+      "total": 62993,
+      "_id": {
+        "$oid": "6727d2fd79b425d54878bd7f"
+      }
+    }
+  ],
+  "total": 244979,
+  "estado": "finalizado",
+  "fecha": {
+    "$date": "2024-11-03T19:46:05.918Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6727d682f06a79f8d6623d54"
+  },
+  "usuario": {
+    "id": "67266f954994725ec4623a6a",
+    "nombre": "Javier",
+    "apellido": "Ruiz",
+    "email": "javier.ruiz@email.com"
+  },
+  "items": [
+    {
+      "nombre": "Juego de sábanas",
+      "cantidad": 6,
+      "precio": 31496.5,
+      "total": 188979,
+      "_id": {
+        "$oid": "6727d682f06a79f8d6623d55"
+      }
+    },
+    {
+      "nombre": "Lámpara de pie",
+      "cantidad": 3,
+      "precio": 45496.5,
+      "total": 136489.5,
+      "_id": {
+        "$oid": "6727d682f06a79f8d6623d56"
+      }
+    }
+  ],
+  "total": 325468.5,
+  "estado": "finalizado",
+  "fecha": {
+    "$date": "2024-11-03T20:01:06.852Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6727d8f38d08dac40aaedc48"
+  },
+  "usuario": {
+    "id": "67266f954994725ec4623a6a",
+    "nombre": "Javier",
+    "apellido": "Ruiz",
+    "email": "javier.ruiz@email.com"
+  },
+  "items": [
+    {
+      "nombre": "Mesa de comedor",
+      "cantidad": 2,
+      "precio": 139996.5,
+      "total": 279993,
+      "_id": {
+        "$oid": "6727d8f38d08dac40aaedc49"
+      }
+    },
+    {
+      "nombre": "Juego de sábanas",
+      "cantidad": 2,
+      "precio": 31496.5,
+      "total": 62993,
+      "_id": {
+        "$oid": "6727d8f38d08dac40aaedc4a"
+      }
+    }
+  ],
+  "total": 342986,
+  "estado": "finalizado",
+  "fecha": {
+    "$date": "2024-11-03T20:11:31.152Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6727d9058d08dac40aaedc4e"
+  },
+  "usuario": {
+    "id": "67266f954994725ec4623a6a",
+    "nombre": "Javier",
+    "apellido": "Ruiz",
+    "email": "javier.ruiz@email.com"
+  },
+  "items": [
+    {
+      "nombre": "Mesa de comedor",
+      "cantidad": 2,
+      "precio": 139996.5,
+      "total": 279993,
+      "_id": {
+        "$oid": "6727d9058d08dac40aaedc4f"
+      }
+    }
+  ],
+  "total": 279993,
+  "estado": "finalizado",
+  "fecha": {
+    "$date": "2024-11-03T20:11:49.428Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6727d97b65248742df4b26a8"
+  },
+  "usuario": {
+    "id": "67266f954994725ec4623a6a",
+    "nombre": "Javier",
+    "apellido": "Ruiz",
+    "email": "javier.ruiz@email.com"
+  },
+  "items": [
+    {
+      "nombre": "Sofá de 3 plazas",
+      "cantidad": 2,
+      "precio": 209996.5,
+      "total": 419993,
+      "_id": {
+        "$oid": "6727d97b65248742df4b26a9"
+      }
+    }
+  ],
+  "total": 419993,
+  "estado": "finalizado",
+  "fecha": {
+    "$date": "2024-11-03T20:13:47.720Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6727dcddcc55599b84276aa0"
+  },
+  "usuario": {
+    "id": "67266f954994725ec4623a68",
+    "nombre": "Miguel",
+    "apellido": "Torres",
+    "email": "miguel.torres@email.com"
+  },
+  "items": [
+    {
+      "nombre": "Mesa de comedor",
+      "cantidad": 4,
+      "precio": 139996.5,
+      "total": 559986,
+      "_id": {
+        "$oid": "6727dcddcc55599b84276aa1"
+      }
+    },
+    {
+      "nombre": "Juego de sábanas",
+      "cantidad": 2,
+      "precio": 31496.5,
+      "total": 62993,
+      "_id": {
+        "$oid": "6727dcddcc55599b84276aa2"
+      }
+    },
+    {
+      "nombre": "Mesa de comedor",
+      "cantidad": 1,
+      "precio": 139996.5,
+      "total": 139996.5,
+      "_id": {
+        "$oid": "6727dcddcc55599b84276aa3"
+      }
+    }
+  ],
+  "total": 762975.5,
+  "estado": "finalizado",
+  "fecha": {
+    "$date": "2024-11-03T20:28:13.269Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6727ddf6ecacd0ddeabf5de8"
+  },
+  "usuario": {
+    "id": "67266f954994725ec4623a68",
+    "nombre": "Miguel",
+    "apellido": "Torres",
+    "email": "miguel.torres@email.com"
+  },
+  "items": [
+    {
+      "nombre": "Mesa de comedor",
+      "cantidad": 2,
+      "precio": 139996.5,
+      "total": 279993,
+      "_id": {
+        "$oid": "6727ddf6ecacd0ddeabf5de9"
+      }
+    }
+  ],
+  "total": 279993,
+  "estado": "finalizado",
+  "fecha": {
+    "$date": "2024-11-03T20:32:54.601Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6727df83618c2872ba3fdbcc"
+  },
+  "usuario": {
+    "id": "67266f954994725ec4623a6a",
+    "nombre": "Javier",
+    "apellido": "Ruiz",
+    "email": "javier.ruiz@email.com"
+  },
+  "items": [
+    {
+      "nombre": "Juego de sábanas",
+      "cantidad": 1,
+      "precio": 31496.5,
+      "total": 31496.5,
+      "_id": {
+        "$oid": "6727df83618c2872ba3fdbcd"
+      }
+    }
+  ],
+  "total": 31496.5,
+  "estado": "finalizado",
+  "fecha": {
+    "$date": "2024-11-03T20:39:31.168Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6727e0e2618c2872ba3fdbda"
+  },
+  "usuario": {
+    "id": "67266f954994725ec4623a6a",
+    "nombre": "Javier",
+    "apellido": "Ruiz",
+    "email": "javier.ruiz@email.com"
+  },
+  "items": [
+    {
+      "nombre": "Sofá de 3 plazas",
+      "cantidad": 4,
+      "precio": 209996.5,
+      "total": 839986,
+      "_id": {
+        "$oid": "6727e0e2618c2872ba3fdbdb"
+      }
+    }
+  ],
+  "total": 839986,
+  "estado": "finalizado",
+  "fecha": {
+    "$date": "2024-11-03T20:45:22.941Z"
+  },
+  "__v": 0
+}]

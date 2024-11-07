@@ -1,0 +1,100 @@
+[{
+  "_id": {
+    "$oid": "67266f954994725ec4623a61"
+  },
+  "nombre": "María",
+  "apellido": "González",
+  "email": "maria.gonzalez@email.com",
+  "contraseña": "$2a$10$OnIheXIg/AYr77OIqsqw6.3Yw/q7sNZJbSK9tKzK/oY3uBvqSCm/u",
+  "activo": true
+},
+{
+  "_id": {
+    "$oid": "67266f954994725ec4623a62"
+  },
+  "nombre": "Juan",
+  "apellido": "Pérez",
+  "email": "juan.perez@email.com",
+  "contraseña": "$2a$10$oLXUCrdGtUX1FbU8mWP7FuXWSFm/yVrp4C9A7zEj1Gp03BYtsOmDm",
+  "activo": true
+},
+{
+  "_id": {
+    "$oid": "67266f954994725ec4623a63"
+  },
+  "nombre": "Ana",
+  "apellido": "Martínez",
+  "email": "ana.martinez@email.com",
+  "contraseña": "$2a$10$yzWeohaj8lV3QG2gqImcweOxH0nI72Cj1lTQyMhpWmed2t.7Vb/yy",
+  "activo": false
+},
+{
+  "_id": {
+    "$oid": "67266f954994725ec4623a64"
+  },
+  "nombre": "Carlos",
+  "apellido": "López",
+  "email": "carlos.lopez@email.com",
+  "contraseña": "$2a$10$hcTVwkwboHsOZAdAoPfeR.rrm35ZRyuKhlFYOM1eSnLFRmBs3hKS2",
+  "activo": true
+},
+{
+  "_id": {
+    "$oid": "67266f954994725ec4623a65"
+  },
+  "nombre": "Laura",
+  "apellido": "Rodríguez",
+  "email": "laura.rodriguez@email.com",
+  "contraseña": "$2a$10$YjOOyJTc3bq52t7LTJsuEOTr/HzB0PMl4pweF64zb/1n6cZlaHnQa",
+  "activo": true
+},
+{
+  "_id": {
+    "$oid": "67266f954994725ec4623a66"
+  },
+  "nombre": "Pedro",
+  "apellido": "Sánchez",
+  "email": "pedro.sanchez@email.com",
+  "contraseña": "$2a$10$tsC.MzJpCYfUeA1eqdR7Key68nvRtBbZBA/qqO11C/hxO91xxqm22",
+  "activo": false
+},
+{
+  "_id": {
+    "$oid": "67266f954994725ec4623a67"
+  },
+  "nombre": "Sofía",
+  "apellido": "Fernández",
+  "email": "sofia.fernandez@email.com",
+  "contraseña": "$2a$10$B2DyXcmLOrVxIG.eAOSsh.w3bitThC4gFaifyDOta/OJ6UpE9P0zS",
+  "activo": true
+},
+{
+  "_id": {
+    "$oid": "67266f954994725ec4623a68"
+  },
+  "nombre": "Miguel",
+  "apellido": "Torres",
+  "email": "miguel.torres@email.com",
+  "contraseña": "$2a$10$2eOPsDR0tPW9OpRZelmVTebuxGPYtjDkvty/tPUyKH8oftLcxeTqy",
+  "activo": true
+},
+{
+  "_id": {
+    "$oid": "67266f954994725ec4623a69"
+  },
+  "nombre": "Elena",
+  "apellido": "Díaz",
+  "email": "elena.diaz@email.com",
+  "contraseña": "$2a$10$WGoqzkCewwMr5jDQ4eAAnOMjwSmZY9eNEvsKtqpsoFLm/sUbPAtL2",
+  "activo": false
+},
+{
+  "_id": {
+    "$oid": "67266f954994725ec4623a6a"
+  },
+  "nombre": "Javier",
+  "apellido": "Ruiz",
+  "email": "javier.ruiz@email.com",
+  "contraseña": "$2a$10$5yvIFZEHvj5YdADVXim7J.l1veooAmKZ95kf/0dpt01RQk2AVoQoq",
+  "activo": true
+}]
