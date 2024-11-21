@@ -10,7 +10,17 @@ const router = Router();
 router.post('/create', async(req,res) => {
     const {nombre, apellido, email, contraseña, activo} = req.body;
     try {
-        const result = await createUser({nombre, apellido, email, contraseña, activo});
+        const salt = bcrypt.genSaltSync(10);
+        const contraseñaEncriptada = bcrypt.hashSync(contraseña, salt);
+        
+        const result = await createUser({
+            nombre, 
+            apellido, 
+            email, 
+            contraseña: contraseñaEncriptada, 
+            activo
+        });
+        
         res.status(200).json(result);
     } catch(error) {
         console.error('Error al crear usuario:', error);
@@ -46,7 +56,7 @@ router.post('/login', async(req, res) => {
                 nombre: user.nombre
             },
             process.env.JWT_SECRET,
-            { expiresIn: '2m' }
+            { expiresIn: '1h' } 
         );
 
         const userData = {

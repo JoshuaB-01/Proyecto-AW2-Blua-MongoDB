@@ -1,6 +1,5 @@
 import { connectToDatabase } from "../connection.js"
 import User from "../schemas/user.schema.js"
-import bcrypt from 'bcryptjs';
 
 export const createUser = async({nombre, apellido, email, contraseña, activo}) => {
     try {

@@ -64,8 +64,6 @@ function vaciarCarrito() {
 async function comprar() {
     const token = localStorage.getItem('token');
     const user = JSON.parse(sessionStorage.getItem('user'));
-    console.log('Iniciando compra con token:', token);
-    console.log('Usuario:', user);
 
     if (!token || !user) {
         alert('No hay sesión activa. Por favor, inicie sesión.');
@@ -96,9 +94,7 @@ async function comprar() {
             }))
         };
 
-        console.log('Datos de la orden:', ordenData);
         const result = await crearOrden(ordenData);
-        console.log('Resultado de la orden:', result);
 
         if (result && result.order) {
             alert(`Compra realizada con éxito. Número de orden: ${result.order._id}`);

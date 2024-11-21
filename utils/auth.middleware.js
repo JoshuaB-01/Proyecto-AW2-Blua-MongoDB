@@ -5,7 +5,6 @@ import 'dotenv/config';
 export const verifyToken = async (req, res, next) => {
     try {
         const authHeader = req.headers['authorization'];
-        console.log('Headers recibidos:', req.headers);
         
         if (!authHeader || !authHeader.startsWith('Bearer ')) {
             return res.status(401).json({ 
@@ -15,11 +14,10 @@ export const verifyToken = async (req, res, next) => {
         }
 
         const token = authHeader.split(' ')[1];
-        console.log('Token recibido:', token);
 
         if (!process.env.JWT_SECRET) {
             console.error('JWT_SECRET no configurado');
-            return res.status(401).json({ 
+            return res.status(500).json({ 
                 status: false, 
                 error: 'Error de configuración del servidor' 
             });
@@ -27,8 +25,7 @@ export const verifyToken = async (req, res, next) => {
 
         try {
             const decoded = jwt.verify(token, process.env.JWT_SECRET);
-            console.log('Token decodificado:', decoded);
-
+            
             const usuario = await User.findById(decoded.id);
             if (!usuario || !usuario.activo) {
                 return res.status(401).json({ 
@@ -40,7 +37,6 @@ export const verifyToken = async (req, res, next) => {
             req.user = decoded;
             next();
         } catch (err) {
-            console.error('Error en verificación:', err);
             if (err.name === 'TokenExpiredError') {
                 return res.status(401).json({ 
                     status: false, 

@@ -2,7 +2,10 @@ import mongoose from 'mongoose';
 
 const orderSchema = new mongoose.Schema({
     usuario: {
-        id: String,
+        id: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'users'
+        },
         nombre: String,
         apellido: String,
         email: String
@@ -26,4 +29,4 @@ const orderSchema = new mongoose.Schema({
     }
 });
 
-export const Order = mongoose.model('Order', orderSchema);
+export const Order = mongoose.model('orders', orderSchema);
