@@ -11,7 +11,10 @@ const orderSchema = new mongoose.Schema({
         email: String
     },
     items: [{
-        id: String,
+        id: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'product'
+        },
         nombre: String,
         cantidad: Number,
         precio: Number,

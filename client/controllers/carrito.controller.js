@@ -86,7 +86,7 @@ async function comprar() {
                 email: user.email
             },
             items: carrito.map(item => ({
-                id: item.id,
+                _id: item._id,
                 nombre: item.nombre,
                 cantidad: item.cantidad,
                 precio: item.precio,

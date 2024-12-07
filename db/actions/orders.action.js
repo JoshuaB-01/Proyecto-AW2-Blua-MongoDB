@@ -23,7 +23,7 @@ export const crearOrdenAction = async (req, res) => {
                 email: usuarioExistente.email
             },
             items: items.map(item => ({
-                id: item.id,
+                id: new mongoose.Types.ObjectId(item._id),
                 nombre: item.nombre,
                 cantidad: item.cantidad,
                 precio: item.precio,
@@ -40,5 +40,28 @@ export const crearOrdenAction = async (req, res) => {
     } catch (error) {
         console.error('Error al crear la orden:', error);
         res.status(500).json({ error: 'Error interno del servidor' });
+    }
+};
+
+export const getUserPurchases = async (userId) => {
+    try {
+        await connectToDatabase();
+        const orders = await Order.find({ 'usuario.id': userId });
+        const purchasedProducts = new Set();
+        
+        orders.forEach(order => {
+            if (order.items && Array.isArray(order.items)) {
+                order.items.forEach(item => {
+                    if (item && item.id) {
+                        purchasedProducts.add(item.id.toString());
+                    }
+                });
+            }
+        });
+        
+        return Array.from(purchasedProducts);
+    } catch (error) {
+        console.error('Error al obtener compras del usuario:', error);
+        throw error;
     }
 };

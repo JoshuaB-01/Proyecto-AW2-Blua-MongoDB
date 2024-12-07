@@ -1,0 +1,68 @@
+[{
+  "_id": {
+    "$oid": "67537d69bf113d99a78881bf"
+  },
+  "producto": {
+    "$oid": "672636b84994725ec4623a21"
+  },
+  "usuario": {
+    "$oid": "67266f954994725ec4623a62"
+  },
+  "calificacion": 4,
+  "comentario": "Excelente producto",
+  "fecha": {
+    "$date": "2024-12-06T22:40:41.227Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67537d96bf113d99a78881e6"
+  },
+  "producto": {
+    "$oid": "672636b84994725ec4623a20"
+  },
+  "usuario": {
+    "$oid": "67266f954994725ec4623a62"
+  },
+  "calificacion": 2,
+  "comentario": "El producto esta dañado",
+  "fecha": {
+    "$date": "2024-12-06T22:41:26.579Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67537dcfbf113d99a7888227"
+  },
+  "producto": {
+    "$oid": "672636b84994725ec4623a21"
+  },
+  "usuario": {
+    "$oid": "67266f954994725ec4623a61"
+  },
+  "calificacion": 2,
+  "comentario": "Madera de mala calidad.",
+  "fecha": {
+    "$date": "2024-12-06T22:42:23.257Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67537e16bf113d99a788827f"
+  },
+  "producto": {
+    "$oid": "672636b84994725ec4623a20"
+  },
+  "usuario": {
+    "$oid": "67266f954994725ec4623a61"
+  },
+  "calificacion": 5,
+  "comentario": "Excelente calidad del producto.",
+  "fecha": {
+    "$date": "2024-12-06T22:43:34.282Z"
+  },
+  "__v": 0
+}]

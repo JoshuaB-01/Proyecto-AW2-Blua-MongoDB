@@ -2,7 +2,8 @@ import { CardComponent } from '../components/cardComponent.js';
 import { NavbarComponent } from '../components/navbarComponent.js';
 import { FooterComponent } from '../components/footerComponent.js';
 import { getData, setData } from '../utils/localStorage.controller.js';
-import { fetchProductos } from '../api/api.js';
+import { fetchProductos, getProductReviews, createReview, getUserPurchases } from '../api/api.js';
+import { ReviewsModal } from '../components/reviewsComponent.js';
 
 let productos = [];
 
@@ -29,7 +30,6 @@ function renderizarFooter() {
 async function cargarProductos() {
     try {
         productos = await fetchProductos();
-
         const contenedorProductos = document.getElementById('contenedor-productos');
         
         let htmlProductos = '';
@@ -68,6 +68,56 @@ window.agregarAlCarrito = function(productId) {
         alert('Producto agregado al carrito');
     } else {
         alert('Por favor, ingrese una cantidad válida');
+    }
+}
+
+window.mostrarReseñas = async function(productId) {
+    try {
+        const [reviews, purchasedProducts] = await Promise.all([
+            getProductReviews(productId),
+            getUserPurchases()
+        ]);
+        const producto = productos.find(p => p._id === productId);
+        
+        const modalContainer = document.createElement('div');
+        modalContainer.id = 'reviewsModal';
+        modalContainer.innerHTML = ReviewsModal(producto, reviews, purchasedProducts);
+        document.body.appendChild(modalContainer);
+    } catch (error) {
+        console.error('Error al cargar reseñas:', error);
+        alert('Error al cargar las reseñas');
+    }
+}
+
+window.cerrarModal = function() {
+    const modal = document.getElementById('reviewsModal');
+    if (modal) {
+        modal.remove();
+    }
+}
+
+window.agregarReseña = async function(productId) {
+    const calificacion = document.getElementById('rating').value;
+    const comentario = document.getElementById('comment').value;
+    
+    if (!calificacion || !comentario) {
+        alert('Por favor complete todos los campos');
+        return;
+    }
+
+    try {
+        await createReview({
+            producto: productId,
+            calificacion: parseInt(calificacion),
+            comentario
+        });
+        
+        alert('Reseña agregada exitosamente');
+        cerrarModal();
+        mostrarReseñas(productId);
+    } catch (error) {
+        console.error('Error al agregar reseña:', error);
+        alert('Error al agregar la reseña');
     }
 }
 
